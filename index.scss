@@ -1,0 +1,152 @@
+.big-background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./picture/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .shado{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(43, 43, 43, 0.447);
+        position: absolute;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    .logo{
+        width: 140px;
+        height: 60px;
+        position: relative;
+        left: 20px;
+        top: 0px;
+        img{
+            width: 180%;
+        }
+    }
+    .sign-big{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        z-index: 2;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sign-box{
+            width: 100%;
+            height: 550px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            @media screen and (min-width:992px) and (max-width:1200px) {
+                width: 150%;
+            }
+            @media screen and (max-width:992px) {
+                margin-top: 50px;
+            }
+            .sign-in{
+                width: 80%;
+                height: 80%; 
+                color:  rgb(221, 221, 221);
+                .top{
+                    width: 100%;
+                    height: 100px;
+                }
+                .bottom{
+                    width: 100%;
+                    height: 70px;
+                    margin-top: 20px;
+                    
+                    .bb{
+                        width: 40px;
+                        height: 40px;
+                        position: relative;
+                        top: -70px;
+                        left: 85%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 26px;
+                        color: #6F717F;
+                        cursor: pointer;
+                    }
+                }
+                h1{
+                    font-size: 28px;
+                    color: white;
+                }
+                input{
+                    width: 100%;
+                    height: 50px;
+                    margin-top: 50px;
+                    background-color: #323032;
+                    border: none;
+                    border-radius: 7px;
+                    color: white;
+                    
+                    &:focus{
+                        outline: none;
+                    }
+                    &:focus ~ label{
+                        left: -100%;
+                    }
+                    &:valid ~ label{
+                        left: -100%;
+                    }
+                }
+                label{
+                    position: relative;
+                    top: -38px;
+                    left: 20px;
+                    color: #6F717F;
+                    transition: 0.5s;
+                }
+                button{
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: red;
+                    color: white;
+                }
+                .tagi{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .chap{
+                        width: 50%;
+                        input{
+                            position: relative;
+                            top: -30px;
+                            width: 20px;
+                        }
+                        .ee{
+                            position: relative;
+                            top: -50px;
+                            left: 10px;
+                            color: rgb(216, 216, 216);
+                        }
+                    }
+                    .ung{
+                        width: 50%;
+                        text-align: end;
+                        .rr{
+                            position: relative;
+                            top: 30px;
+                            color:  rgb(216, 216, 216);
+                        }
+                    }
+                }
+                p{
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    color: rgb(221, 221, 221);
+                }
+            }
+        }
+    }
+}
+
